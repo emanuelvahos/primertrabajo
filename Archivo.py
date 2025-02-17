@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import time
 
-# Título con diseño y animación
+#1. Título con diseño y animación
 col1, col2, col3 = st.columns([1, 2, 1])  # Divide el espacio en 3 columnas
 
 with col2:  # Columna central para el título
@@ -15,13 +15,13 @@ with col2:  # Columna central para el título
         .titulo {
             font-size: 3em;
             font-weight: bold;
-            color: #336699; /* Un color azul llamativo */
+            color: #336699;
             text-align: center;
-            animation: color-change 5s infinite alternate; /* Animación de cambio de color */
+            animation: color-change 5s infinite alternate;
         }
         @keyframes color-change {
             from { color: #336699; }
-            to { color: #009933; } /* Cambia a un verde vibrante */
+            to { color: #009933; }
         }
         </style>
         """,
@@ -29,7 +29,7 @@ with col2:  # Columna central para el título
     )
     st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
 
-# Imagen de encabezado (opcional)
-image = Image.open("https://encolombia.com/wp-content/uploads/2019/05/agroindustria-colombia.jpg")  # Reemplaza con la ruta de tu imagen
+#2. Imagen de encabezado
+image = Image.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQ-dfdJYD3InkuaFidnzuD5uNI9peoOk8DQ&s")
 st.image(image, use_column_width=True)
 
