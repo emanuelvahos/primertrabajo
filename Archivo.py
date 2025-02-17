@@ -22,9 +22,10 @@ with col2:  # Columna central para el título
         .titulo {
             font-size: 3em;
             font-weight: bold;
-            color: #336699; /* Un color azul llamativo */
+            color: #336699;
             text-align: center;
-            animation: color-change 5s infinite alternate; /* Animación de cambio de color */
+            animation: color-change 5s infinite alternate;
+            
         }
         @keyframes color-change {
             from { color: #336699; }
@@ -34,7 +35,8 @@ with col2:  # Columna central para el título
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='titulo'>Agroindustria en Colombia🚜</h1>", unsafe_allow_html=True)
+  
 
 
 # Generación de datos aleatorios
@@ -50,7 +52,7 @@ df = pd.DataFrame(np.random.rand(num_filas, num_columnas), columns=nombres_colum
 # Selección de variables
 st.sidebar.title("Selección de Variables")
 variables_seleccionadas = st.sidebar.multiselect(
-    "Selecciona las variables a mostrar", df.columns.tolist()
+    "Selecciona las variables que deseas vizualizar", df.columns.tolist()
 )
 
 # Mostrar los datos seleccionados
