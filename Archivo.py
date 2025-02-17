@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import random
+from PIL import Image
+import time
 
 # Título del dashboard
 st.set_page_config(
