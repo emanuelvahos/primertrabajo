@@ -1,16 +1,16 @@
-import streamlit as st
-import numpy as np
+import streamlit as st 
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
-import scipy as sp
 import seaborn as sns
 import plotly.express as px
-import datetime
-#1. configuración inicial de la aplicación 
+import datetime 
+
+#1. Configuración inicial de la aplicación
 st.set_page_config(
-  page_tityle="Dashboard Interactivo",
+  page_title="Dashboard Interactivo",
   page_icon="📊",
   layout="wide"
 )
-st.title("📊 Dashboard Interactivo con Streamlit")
-st.sidebar.title("🔍 Ociones de navegación")
+st.title("📊 Dashboard interactivo con Streamlit")
+st.sidebar.title("🔍 Opciones de navegación")
