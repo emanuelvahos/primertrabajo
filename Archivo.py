@@ -36,7 +36,7 @@ with col2:  # Columna central para el título
     )
     st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
 
-image = Image.open("https://www.easygifanimator.net/images/samples/video-to-gif-sample.gif"),
+image = Image.open("https://www.easygifanimator.net/images/samples/video-to-gif-sample.gif")
 st.image(image, use_column_width=True)
 
 
