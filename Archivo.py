@@ -36,13 +36,17 @@ with col2:  # Columna central para el título
     )
     st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
 
+image = Image.open("https://w7.pngwing.com/pngs/301/622/png-transparent-agribusiness-agriculture-industry-information-technology-retail-information-technology-business-thumbnail.png"),
+st.image(image, use_column_width=True)
+
+
 
 # Generación de datos aleatorios
 num_filas = 150
 num_columnas = 8
 
 # Genera nombres de columnas
-nombres_columnas = [f"Variable_{i}" for i in range(num_columnas)]
+nombres_columnas = [f"opcion_{i}" for i in range(num_columnas)]
 
 # Crea el DataFrame con datos aleatorios
 df = pd.DataFrame(np.random.rand(num_filas, num_columnas), columns=nombres_columnas)
@@ -58,7 +62,7 @@ if variables_seleccionadas:
     st.write("Datos de Agroindustria en Colombia:")
     st.dataframe(df[variables_seleccionadas])
 
-    # Crear un gráfico de dispersión si se seleccionan al menos dos variables
+    # Crear un gráfico de dispersión si seleccionan al menos dos variables
     if len(variables_seleccionadas) >= 2:
         st.write("Gráfico de Dispersión:")
 
