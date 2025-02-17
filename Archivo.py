@@ -36,10 +36,6 @@ with col2:  # Columna central para el título
     )
     st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
 
-# Imagen de encabezado
-image = Image.open("https://s3.amazonaws.com/img.pymas.com.co/_600xAUTO_crop_center-center/agroindustria-en-colombia.png")
-st.image(image, use_column_width=True)
-
 
 # Generación de datos aleatorios
 num_filas = 150
