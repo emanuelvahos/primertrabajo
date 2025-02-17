@@ -8,10 +8,12 @@ import time
 #1. Título con diseño y animación
 col1, col2, col3 = st.columns([1, 2, 1])  # Divide el espacio en 3 columnas
 
-with col1: 
-    st.set_page_config(
-        page_icon="🚜"
-    )
+st.set_page_config(
+    page_title="Agroindustria en Colombia",  # Título de la pestaña
+    page_icon="🚜",  # Icono de la pestaña
+    layout="wide" # Diseño ancho (opcional)
+)
+
 with col2:  # Columna central para el título
     st.markdown(
         """
