@@ -29,13 +29,13 @@ with col2:  # Columna central para el título
         }
         @keyframes color-change {
             from { color: #336699; }
-            to { color: #009933; } /* Cambia a un verde vibrante */
+            to { color: #009933; }
         }
         </style>
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("<h1 class='titulo'>Agroindustria en Colombia🚜</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='titulo'>Agroindustria en Colombia 🚜</h1>", unsafe_allow_html=True)
   
 
 
