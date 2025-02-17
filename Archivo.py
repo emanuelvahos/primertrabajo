@@ -8,6 +8,10 @@ import time
 #1. Título con diseño y animación
 col1, col2, col3 = st.columns([1, 2, 1])  # Divide el espacio en 3 columnas
 
+with col1: 
+    st.set_page_config(
+        page_icon="🚜"
+    )
 with col2:  # Columna central para el título
     st.markdown(
         """
