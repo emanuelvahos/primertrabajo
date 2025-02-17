@@ -11,11 +11,40 @@ st.set_page_config(
   
   layout="wide"
 )
-# Generación de datos aleatorios
-num_filas = 8
-num_columnas = 150  # Un valor grande para simular muchas variables
 
-# Genera nombres de columnas aleatorios (puedes personalizarlos)
+col1, col2, col3 = st.columns([1, 2, 1])  # Divide el espacio en 3 columnas
+
+with col2:  # Columna central para el título
+    st.markdown(
+        """
+        <style>
+        .titulo {
+            font-size: 3em;
+            font-weight: bold;
+            color: #336699; /* Un color azul llamativo */
+            text-align: center;
+            animation: color-change 5s infinite alternate; /* Animación de cambio de color */
+        }
+        @keyframes color-change {
+            from { color: #336699; }
+            to { color: #009933; } /* Cambia a un verde vibrante */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.markdown("<h1 class='titulo'>Agroindustria en Colombia</h1>", unsafe_allow_html=True)
+
+# Imagen de encabezado (opcional)
+image = Image.open("ruta_de_la_imagen.jpg")  # Reemplaza con la ruta de tu imagen
+st.image(image, use_column_width=True)
+
+
+# Generación de datos aleatorios
+num_filas = 150
+num_columnas = 8
+
+# Genera nombres de columnas
 nombres_columnas = [f"Variable_{i}" for i in range(num_columnas)]
 
 # Crea el DataFrame con datos aleatorios
