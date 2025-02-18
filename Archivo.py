@@ -7,8 +7,8 @@ import time
 
 # Título del dashboard
 st.set_page_config(
-  page_title="Agroindustria en Colombia",
-  page_icon="🚜",
+  page_title="Redes Móviles en colombia",
+  page_icon="📡",
   
   layout="wide"
 )
@@ -35,13 +35,13 @@ with col2:  # Columna central para el título
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("<h1 class='titulo'>Agroindustria en Colombia 🚜</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='titulo'>Redes moviles en Colombia </h1>", unsafe_allow_html=True)
   
 
 
 # Generación de datos aleatorios
 num_filas = 150
-num_columnas = 8
+num_columnas = 16
 
 # Genera nombres de columnas
 nombres_columnas = [f"opcion_{i}" for i in range(num_columnas)]
@@ -50,7 +50,7 @@ nombres_columnas = [f"opcion_{i}" for i in range(num_columnas)]
 df = pd.DataFrame(np.random.rand(num_filas, num_columnas), columns=nombres_columnas)
 
 # Selección de variables
-st.sidebar.title("Selección de Variables")
+st.sidebar.title("Selección de Red movil")
 variables_seleccionadas = st.sidebar.multiselect(
     "Selecciona las variables que deseas vizualizar", df.columns.tolist()
 )
